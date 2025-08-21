@@ -43,3 +43,26 @@ The key challenge addressed in this project is detecting fraudulent financial tr
 **Ip_location_region**: Transactions originating from an unusual geographic location, especially far from the user’s typical location, can indicate fraudulent activity.
 
 **Fraud_indicator**: The target variable for supervised learning. It labels each transaction as fraudulent (1) or legitimate (0), allowing models to learn patterns associated with fraud.
+
+
+## 🚀 Features
+
+- **Federated Learning with Flower (FLWR)**:
+Multiple institutions (clients) collaboratively train models while keeping their data local.
+
+- **Hybrid Model Approach**:
+Combines classical ML algorithms (Random Forest, Naïve Bayes, KNN) with a deep learning model (CNN).
+
+- **Privacy-Preserving**:
+Data never leaves the client’s environment. Only model weights and updates are exchanged.
+
+- **Advanced Fraud Detection**:
+  -- Feature preprocessing (encoding, scaling, timestamp normalization)
+  -- Data balancing with SMOTE
+  -- Aggregation of metrics like Accuracy, Precision, F1, AUC, and Loss
+
+- **Server-Side Model Saving**:
+The global model weights are aggregated and stored after each round of federated learning.
+
+
+

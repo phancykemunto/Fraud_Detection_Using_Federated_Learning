@@ -57,9 +57,9 @@ Combines classical ML algorithms (Random Forest, Naïve Bayes, KNN) with a deep 
 Data never leaves the client’s environment. Only model weights and updates are exchanged.
 
 - **Advanced Fraud Detection**:
-  -- Feature preprocessing (encoding, scaling, timestamp normalization)
-  -- Data balancing with SMOTE
-  -- Aggregation of metrics like Accuracy, Precision, F1, AUC, and Loss
+  - Feature preprocessing (encoding, scaling, timestamp normalization)
+  - Data balancing with SMOTE
+  - Aggregation of metrics like Accuracy, Precision, F1, AUC, and Loss
 
 - **Server-Side Model Saving**:
 The global model weights are aggregated and stored after each round of federated learning.

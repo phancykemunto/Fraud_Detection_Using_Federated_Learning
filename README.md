@@ -64,15 +64,6 @@ Data never leaves the client’s environment. Only model weights and updates are
 - **Server-Side Model Saving**:
 The global model weights are aggregated and stored after each round of federated learning.
 
-## Project Structure
-
-📦 Fraud_Detection_Using_Federated_Learning
-├── client.py # Client-side logic (data preprocessing, model training & evaluation)
-├── server.py # Server-side aggregation & model coordination
-├── FEDERATED.csv # Example dataset (must contain financial transaction records)
-├── requirements.txt # Project dependencies
-└── README.md # Project documentation
-
 
 ⚙️ How It Works
 ---------------
@@ -96,3 +87,11 @@ The global model weights are aggregated and stored after each round of federated
     *   Sends model updates (not raw data) to the server.
         
     *   Evaluates predictions using a **hybrid ensemble approach**.
+  
+    # 🤝 Contributing
+
+Contributions are welcome! Please fork the repo and submit a pull request.
+
+📜 **License**
+
+MIT License © 2025 Phancy Kemunto

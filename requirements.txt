@@ -1,0 +1,8 @@
+flwr==1.6.0
+numpy
+pandas
+scikit-learn
+joblib
+tensorflow
+streamlit
+matplotlib

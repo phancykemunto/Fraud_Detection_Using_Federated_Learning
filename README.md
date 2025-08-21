@@ -64,5 +64,34 @@ Data never leaves the client’s environment. Only model weights and updates are
 - **Server-Side Model Saving**:
 The global model weights are aggregated and stored after each round of federated learning.
 
+## Project Structure
 
+📦 Fraud_Detection_Using_Federated_Learning
+├── client.py # Client-side logic (data preprocessing, model training & evaluation)
+├── server.py # Server-side aggregation & model coordination
+├── FEDERATED.csv # Example dataset (must contain financial transaction records)
+├── requirements.txt # Project dependencies
+└── README.md # Project documentation
 
+⚙️ How It Works
+---------------
+
+1.  **Server (`server.py`)**
+    
+    *   Runs the Flower federated learning server.
+        
+    *   Uses a **custom FedAvg strategy** to aggregate model updates.
+        
+    *   Saves global model weights (`global_model_weights.pkl`) after each round.
+        
+2.  **Client (`client.py`)**
+    
+    *   Loads and preprocesses transaction data (`FEDERATED.csv`).
+        
+    *   Encodes categorical variables, normalizes numerical ones, balances dataset with **SMOTE**.
+        
+    *   Trains **Random Forest, Naïve Bayes, KNN, and CNN** models locally.
+        
+    *   Sends model updates (not raw data) to the server.
+        
+    *   Evaluates predictions using a **hybrid ensemble approach**.

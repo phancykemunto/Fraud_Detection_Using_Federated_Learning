@@ -72,6 +72,7 @@ The global model weights are aggregated and stored after each round of federated
 ├── FEDERATED.csv # Example dataset (must contain financial transaction records)
 ├── requirements.txt # Project dependencies
 └── README.md # Project documentation
+"Fix project structure formatting"
 
 ⚙️ How It Works
 ---------------
